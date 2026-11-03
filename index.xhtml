@@ -49,7 +49,7 @@
 &#13;
   @media (max-width:900px){&#13;
     html,body{height:auto;min-height:100%}&#13;
-    body{display:flex;flex-direction:column;align-items:center;gap:10px;padding:10px 10px 16px;&#13;
+    body{display:flex;flex-direction:column;align-items:center;gap:10px;padding:18px 10px 14px;&#13;
          height:auto;min-height:100vh;overflow-x:hidden}&#13;
     .stage{order:1;width:100%}&#13;
     .side{order:2;width:100%;display:flex;flex-direction:column;align-items:center;gap:8px}&#13;
@@ -234,7 +234,7 @@ function fit() {&#13;
   const narrow = vw &lt; 900;&#13;
   const sideH = narrow ? ($(".side").getBoundingClientRect().height + 12) : 0;&#13;
   const availW = narrow ? vw - 24 : vw - 460;&#13;
-  const availH = narrow ? vh - sideH - 52 : vh - 96;&#13;
+  const availH = narrow ? vh - sideH - 62 : vh - 96;&#13;
   let s = Math.min(1, availW / W, availH / H);&#13;
   s = Math.max(0.4, s);&#13;
   const f = $(".fit"), wrap = $(".fitwrap");&#13;
